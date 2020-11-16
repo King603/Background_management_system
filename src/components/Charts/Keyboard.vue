@@ -10,6 +10,7 @@ export default {
   // 混入公共组件进行合并
   mixins: [resize],
   props: {
+    // 接收父组件的值定义类型并设置默认值
     className: {
       type: String,
       default: "chart",

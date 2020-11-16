@@ -246,15 +246,16 @@ export function getTime(type) {
 }
 
 /**
+ * 防反跳
  * @param {Function} func
  * @param {number} wait
  * @param {boolean} immediate
- * @return {*}
+ * @return {(...args: any[]): any}
  */
 export function debounce(func, wait, immediate) {
   let timeout, args, context, timestamp, result
 
-  const later = function() {
+  function later() {
     // 据上一次触发时间间隔
     const last = +new Date() - timestamp
 
