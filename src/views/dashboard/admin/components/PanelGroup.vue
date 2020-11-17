@@ -38,7 +38,7 @@
           <svg-icon icon-class="money" class-name="card-panel-icon" />
         </div>
         <div class="card-panel-description">
-          <div class="card-panel-text">购买量</div>
+          <div class="card-panel-text">购买金额</div>
           <count-to
             :start-val="0"
             :end-val="9280"
@@ -68,11 +68,9 @@
 </template>
 
 <script>
-import CountTo from "vue-count-to";
-
 export default {
   components: {
-    CountTo,
+    CountTo: () => import("vue-count-to"),
   },
   methods: {
     handleSetLineChartData(type) {

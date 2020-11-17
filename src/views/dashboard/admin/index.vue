@@ -90,12 +90,19 @@ const lineChartData = {
 export default {
   name: "DashboardAdmin",
   components: {
+    // GitHub地址下载
     GithubCorner: () => import("@/components/GithubCorner"),
+    // 信息统计
     PanelGroup: () => import("./components/PanelGroup"),
+    // 线性图表——周报计算
     LineChart: () => import("./components/LineChart"),
+    // 雷达图表——支出计算
     RaddarChart: () => import("./components/RaddarChart"),
+    // 饼状图表——占有率计算
     PieChart: () => import("./components/PieChart"),
+    // 柱状图表
     BarChart: () => import("./components/BarChart"),
+    // 订单列表
     TransactionTable: () => import("./components/TransactionTable"),
     TodoList: () => import("./components/TodoList"),
     BoxCard: () => import("./components/BoxCard"),
@@ -124,7 +131,7 @@ export default {
 
   .github-corner {
     position: absolute;
-    top: 0px;
+    top: 0;
     border: 0;
     right: 0;
   }

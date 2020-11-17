@@ -136,7 +136,7 @@ export const asyncRoutes = [
     alwaysShow: true, // will always show the root menu
     name: 'Permission',
     meta: {
-      title: '许可',
+      title: '权限测试页',
       icon: 'lock',
       roles: ['admin', 'editor'] // you can set roles in root nav
     },

@@ -31,14 +31,10 @@ export default {
     };
   },
   mounted() {
-    this.$nextTick(() => {
-      this.initChart();
-    });
+    this.$nextTick(() => this.initChart());
   },
   beforeDestroy() {
-    if (!this.chart) {
-      return;
-    }
+    if (!this.chart) return;
     this.chart.dispose();
     this.chart = null;
   },

@@ -79,7 +79,7 @@ const asyncRoutes = [
     redirect: '/permission/index',
     alwaysShow: true,
     meta: {
-      title: '许可',
+      title: '权限测试页',
       icon: 'lock',
       roles: ['admin', 'editor']
     },
